@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgb(218, 17, 121), rgb(156, 199, 242));
+}
+.element {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(235, 45, 45);
+  text-shadow: 10px 10px 5px rgba(120, 80, 80, 0.9);
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 2;
+  position: absolute;
+  transition: 0.5s;
+}
+.current {
+  transform: translate(-50%, -50%) scale(1);
+}
+.ballon {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, 100%) scale(0.1);
+  bottom: 0;
+  transition: 20s;
+}
+.ballon img {
+  text-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+.ballon-position {
+  position: absolute;
+  transform: translate(-50%, -100%) scale(1.5);
+  z-index: 3;
+  top: 0;
+  transition: 20s;
+}
